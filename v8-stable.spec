@@ -345,7 +345,7 @@ globally distributed by Guardtime.
 %prep
 %setup -q
 %if %{?rhel} >= 7
-%patch0
+# %patch0
 %endif
 #%patch1 -p1
 #%patch2 -p1
