@@ -47,10 +47,10 @@ BuildRequires: systemd-devel
 # tweak the upstream service file to honour configuration from /etc/sysconfig/rsyslog
 
 # SystemD Patch needed for CentOS 7
-%if %{?rhel} >= 7
-Patch0: rsyslog-systemd-centos7.patch
-%endif
-
+# %if %{?rhel} >= 7
+# Patch0: rsyslog-systemd-centos7.patch
+# %endif
+#
 # NOT NEEDED ANYMORE Patch0: Patch0: rsyslog-7.1.0-systemd.patch
 # already patched 
 # Patch1: rsyslog-5.8.7-sysklogd-compat-1-template.patch
